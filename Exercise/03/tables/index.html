@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise with tables</title>
+
+    <style>
+      table, th, td{
+        border: 1px solid black;
+      }
+
+      .unified{
+        text-align: center;
+      }
+
+      .separator{
+        border: 0;
+        padding-left: 0px;
+        padding-right: 0px;
+      }
+      
+    </style>
+  </head>
+
+  <body>
+    <table cellpadding="8" cellspacing="8">
+      <tr>
+        <th>Header 1</th>
+        <th>Header 2</th>
+        <th>Header 3</th>
+      </tr>
+      <tr>
+        <td>Cell 1-1</td>
+        <td>Cell 2-1</td>
+        <td>Cell 3-1</td>
+      </tr>
+      <tr>
+        <td class="separator" colspan="3"><hr></td>
+      </tr>
+      <tr>
+        <td class="unified" colspan="3">Unified rows</td>
+      </tr>
+    </table>
+  </body>
+</html>
