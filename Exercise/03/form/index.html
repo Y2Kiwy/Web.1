@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Feedback Form</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 10px;
+      background: linear-gradient(135deg, #16423C, #6A9C89);
+    }
+
+    .container {
+      max-width: 500px;
+      width: 100%;
+      background-color: #fff;
+      padding: 15px 20px;
+      border-radius: 5px;
+      box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+    }
+
+    .container .title {
+      font-size: 22px;
+      font-weight: 500;
+      margin-bottom: 15px;
+    }
+
+    fieldset {
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      padding: 10px;
+      margin-bottom: 15px;
+    }
+
+    legend {
+      font-weight: 500;
+      padding: 0 10px;
+      color: #6A9C89;
+    }
+
+    form .input-box {
+      margin-bottom: 10px;
+      width: 100%;
+    }
+
+    form .input-box span.details {
+      display: block;
+      font-weight: 500;
+      margin-bottom: 3px;
+    }
+
+    .input-box input, .input-box select {
+      height: 40px;
+      width: 100%;
+      outline: none;
+      font-size: 14px;
+      border-radius: 5px;
+      padding-left: 10px;
+      border: 1px solid #ccc;
+      border-bottom-width: 2px;
+      transition: all 0.3s ease;
+    }
+
+    .input-box textarea {
+      width: 100%;
+      height: 80px;
+      font-size: 14px;
+      border-radius: 5px;
+      padding: 8px;
+      border: 1px solid #ccc;
+      resize: none;
+    }
+
+    .input-box input:focus,
+    .input-box select:focus {
+      border-color: #6A9C89;
+    }
+
+    .gender-details {
+      margin: 5px 0;
+    }
+
+    .gender-title {
+      font-weight: 500;
+      margin: 5px 0;
+    }
+
+    .gender-details label {
+      margin-right: 10px;
+    }
+
+    .button-group {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 15px;
+    }
+
+    .button-group input {
+      width: 48%;
+      height: 40px;
+      border-radius: 5px;
+      border: none;
+      color: #fff;
+      font-size: 16px;
+      font-weight: 500;
+      background: linear-gradient(135deg, #6A9C89, #16423C);
+    }
+
+    .privacy-policy {
+      display: flex;
+      align-items: center;
+      margin-top: 15px;
+    }
+
+    .privacy-policy input {
+      margin-right: 10px;
+    }
+
+    .privacy-policy a {
+      color: #6A9C89;
+      text-decoration: none;
+    }
+
+    .privacy-policy a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="title">Feedback Form</div>
+    <div class="content">
+      <form>
+
+        <!-- User Details section -->
+        <fieldset>
+          <legend>User Details</legend>
+          <div class="user-details">
+            <!-- Input for Full Name -->
+            <div class="input-box">
+              <span class="details">Full Name</span>
+              <input type="text" placeholder="Enter your name and surname" required>
+            </div>
+
+            <!-- Input for Email -->
+            <div class="input-box">
+              <span class="details">Email</span>
+              <input type="email" placeholder="Enter your email" required>
+            </div>
+
+            <!-- Radio buttons for gender selection -->
+            <div class="gender-details">
+              <span class="gender-title">Gender</span> <br>
+              <label><input type="radio" name="gender" value="male" required> Male</label>
+              <label><input type="radio" name="gender" value="female" required> Female</label>
+            </div>
+
+            <!-- Input for Age -->
+            <div class="input-box">
+              <span class="details">Age</span>
+              <input type="number" placeholder="Enter your age" required>
+            </div>
+          </div>
+        </fieldset>
+        
+        <!-- Preferences section -->
+        <fieldset>
+          <legend>Preferences</legend>
+
+          <!-- Input for Pref. Prog. Leng.-->
+          <div class="input-box">
+            <span class="details">Preferred Programming Language</span>
+            <select required>
+              <option value="">Select a language</option>
+              <option value="Java">Java</option>
+              <option value="JavaScript">JavaScript</option>
+              <option value="C#">C#</option>
+              <option value="Python">Python</option>
+              <option value="Go">Go</option>
+            </select>
+          </div>
+        </fieldset>
+        
+        <!-- Feedback section-->
+        <fieldset>
+          <legend>Feedback</legend>
+
+          <!-- Input for Subject -->
+          <div class="input-box">
+            <span class="details">Subject</span>
+            <input type="text" placeholder="Enter subject" required>
+          </div>
+
+          <!-- Input for Description -->
+          <div class="input-box">
+            <span class="details">Description</span>
+            <textarea placeholder="Enter description" required></textarea>
+          </div>
+        </fieldset>
+
+        <!-- Privacy policy checkbox -->
+        <div class="privacy-policy">
+          <input type="checkbox" required>
+          <label>I agree to the <a href="privacy.html" target="_self">Privacy Policy</a></label>
+        </div>
+
+        <!-- Submit and Reset buttons -->
+        <div class="button-group">
+          <input type="reset" value="Reset">
+          <input type="submit" value="Submit">
+        </div>
+      </form>
+    </div>
+  </div>
+</body>
+</html>
