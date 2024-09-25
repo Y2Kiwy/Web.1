@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 10px;
+      background: linear-gradient(135deg, #16423C, #6A9C89);
+    }
+
+    .container {
+      max-width: 800px;
+      width: 100%;
+      background-color: #fff;
+      padding: 30px;
+      border-radius: 5px;
+      box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+    }
+
+    .container .title {
+      font-size: 24px;
+      font-weight: 600;
+      margin-bottom: 20px;
+      color: #16423C;
+    }
+
+    fieldset {
+      margin-bottom: 20px;
+      border: 1px solid #ccc;
+      padding: 8px;
+      border-radius: 5px;
+    }
+
+    legend {
+      font-size: 18px;
+      font-weight: 500;
+      color: #6A9C89;
+      padding: 0 10px;
+    }
+
+    .content {
+      font-size: 14px;
+      line-height: 1.8;
+      color: #333;
+    }
+
+    a {
+      color: #6A9C89;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    ul {
+      margin-top: 10px;
+      padding-left: 20px;
+    }
+
+    ul li {
+      margin-bottom: 10px;
+    }
+
+    .button-group {
+      margin-top: 20px;
+      display: flex;
+      justify-content: center;
+    }
+
+    .button-group a {
+      width: 100%;
+      padding: 10px 20px;
+      background-color: #6A9C89;
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+      background: linear-gradient(135deg, #6A9C89, #16423C);
+      text-align: center;
+    }
