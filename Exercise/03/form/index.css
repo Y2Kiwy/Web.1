@@ -8,7 +8,7 @@
 }
 
 body {
-  height: 100%;
+  height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -70,7 +70,7 @@ form .input-box span.details {
 .input-box textarea {
   width: 100%;
   height: 80px;
-  outline: #6A9C89;
+  outline: none;
   font-size: 14px;
   border-radius: 5px;
   padding: 8px;
@@ -125,6 +125,11 @@ form .input-box span.details {
 
 .privacy-policy input {
   margin-right: 10px;
+  accent-color: #6A9C89;
+}
+
+.privacy-policy label {
+  user-select: none
 }
 
 .privacy-policy a {
